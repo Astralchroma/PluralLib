@@ -1,0 +1,28 @@
+[package]
+name = "plurallib"
+version = "0.1.0"
+edition = "2021"
+
+authors = [ "Astralchroma" ]
+description = "reqwest based API Library for PluralKit with sync/blocking and async clients"
+repository = "https://github.com/Astralchroma/PluralLib"
+license = "LGPL-3.0-or-later"
+
+categories = [
+    "api-bindings",
+    "web-programming::http-client",
+    "web-programming",
+]
+keywords = [
+    "pk",
+    "pkrs",
+    "plural",
+    "pluralkit",
+    "pluralkitrs",
+]
+
+[dependencies]
+thiserror = "1.0.47"
+url = { version = "2.4.1", features = [ "serde" ] }
+serde = { version = "1.0.188", features = [ "derive" ] }
+uuid = { version = "1.4.1", features = [ "serde" ] }
