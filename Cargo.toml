@@ -22,7 +22,10 @@ keywords = [
 ]
 
 [dependencies]
-thiserror = "1.0.47"
-url = { version = "2.4.1", features = [ "serde" ] }
+hex = "0.4.3"
+rgb = { version = "0.8.36", features = [ "serde" ] }
 serde = { version = "1.0.188", features = [ "derive" ] }
+thiserror = "1.0.47"
+time = { version = "0.3.28", features = [ "serde", "formatting", "parsing" ] }
+url = { version = "2.4.1", features = [ "serde" ] }
 uuid = { version = "1.4.1", features = [ "serde" ] }
